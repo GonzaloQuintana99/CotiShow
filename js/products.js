@@ -1,5 +1,5 @@
 let products = [
-    {id: 1000, title: "Rompecocos", price: 50, cartprice: 20, stock: 0, img:"./img/rompecoco.png", category: "Varios", bestsell: true},
+    {id: 1000, title: "Rompecocos", price: 50, cartprice: 20, stock: 10, img:"./img/rompecoco.png", category: "Varios", bestsell: true},
     {id: 1001, title: "Anteojos Led Neon", price: 50, cartprice: 20, stock: 15, img:"./img/anteojos-led-neon.png", category: "Anteojos", bestsell: true},
     {id: 1002, title: "Collar Hawaiano", price: 50, cartprice: 20, stock: 12, img:"./img/collar-hawaiano.png", category: "Collares", bestsell: true},
     {id: 1003, title: "Corbata Fluor", price: 50, cartprice: 20, stock: 18, img:"./img/corbata-fluor.png", category: "Corbatas", bestsell: true},
