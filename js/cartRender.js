@@ -2,14 +2,6 @@
 
 let cart = [];
 
-// let traer_carrito = localStorage.getItem("Carrito");
-
-// let traer_carrito_json = JSON.parse(traer_carrito)
-
-// for (const products of traer_carrito_json) {
-//   cart.push(products);
-// }
-
 const modalContainer = document.getElementById("modal-container");
 const tabla = document.getElementById("tbody");
 const totalValue = document.querySelector(".totalCart");
@@ -51,35 +43,32 @@ for (let btn of btnaddcart) {
         cart = [...cart, infoProduct];
   
       }
-      // if(parseInt(infoProduct.stockValue) > 0){
-      //   Toastify({
+      if(parseInt(infoProduct.stockValue) > 0){
+        Toastify({
   
-      //     text: "Agregado al carrito",
-      //     position: "left",
-      //     style: {
-      //       background: "green",
-      //       fontSize: "15px",
-      //     },
-      //     duration: 1000
+          text: "Agregado al carrito",
+          position: "left",
+          style: {
+            background: "green",
+            fontSize: "15px",
+          },
+          duration: 1000
           
-      //     }).showToast();
+          }).showToast();
   
         cartRender();
 
-      //   let storageCart = JSON.stringify(cart);
-    
-      //   localStorage.setItem("Carrito", storageCart);
         
-      // }
-      // else{
-      //   Swal.fire({
-      //     icon: 'error',
-      //     title: 'Oops...',
-      //     text: '¡No hay mas Stock!',
-      //     footer: '<a href="">Contactanos para solucionarlo</a>'
-      //   })
-      //   cart.pop();
-      // }
+      }
+      else{
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: '¡No hay mas Stock!',
+          footer: '<a href="">Contactanos para solucionarlo</a>'
+        })
+        cart.pop();
+      }
     }
   }; 
   
@@ -135,4 +124,3 @@ for (let btn of btnaddcart) {
   
   }; 
 
-  // cartRender()
