@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="robots" content="index,follow">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <title>Cotishow - Tienda de Cotillon</title>
+    </head>
+    <body>
+
+
+        <!-- NAVBAR -->
+
+
+        <header>
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="img/logo.png" alt="cotillon" class="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      PRODUCTOS
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" id="btntodo" href="#pdtodo">Todo</a></li>
+                      <li><a class="dropdown-item" id="btnanteojos" href="#pdtodo">Anteojos</a></li>
+                      <li><a class="dropdown-item" id="btncollares" href="#pdtodo">Collares</a></li>
+                      <li><a class="dropdown-item" id="btncorbatas" href="#pdtodo">Corbatas</a></li>
+                      <li><a class="dropdown-item" id="btnpulseras" href="#pdtodo">Pulseras</a></li>
+                      <li><a class="dropdown-item" id="btnvinchas" href="#pdtodo">Vinchas</a></li>
+                      <li><a class="dropdown-item" id="btnvarios" href="#pdtodo">Varios</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" aria-current="page" href="#">PROMOCIONES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" aria-current="page" href="#">COMBOS</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="me-3 buscador" type="text" placeholder="Buscar producto...">
+                </form>
+                <button type="button" class="cart" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-sharp fa-solid fa-cart-shopping"></i></button>
+                <a href="" class="whatsappbtn"><i class="fa-brands fa-whatsapp"></i></a>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+        <main>
+
+          <!-- SEPARADOR COMBOS -->
+
+          <section>
+            <a href="#"><img src="img/combos.webp" alt="combos cotillon" class="combos"></a>
+          </section>
+
+
+          <!-- BUSCADOR -->
+
+        
+          <table>
+            <thead></thead>
+          <tbody id="searchedResult">
+          </tbody>
+        </table>
+
+
+        <!-- SLIDER PRODUCTOS MAS VENDIDOS -->
+
+        <section class="slider-container">
+
+        <div class="swiper">
+          <h1>Lo mas vendido...</h1>  
+          <div class="swiper-wrapper" id="swiper-wrapper">
+          </div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </section>
+      
+      
+          <!-- Modal -->
+          <div class="modal fade bd-example-modal-lg" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-2" id="staticBackdropLabel">Carrito</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                      <td class="imagenCart">Imagen</td>
+                      <td class="titleCart">Producto</td>
+                      <td class="quantityCart">Cantidad</td>
+                      <td class="priceCart">Precio</td>
+                      <td></td>
+                      </tr>
+                    </thead>
+                    <tbody id="tbody">
+
+                    </tbody>
+                  </table>
+                  <p class="totalCart">Total: $0</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btncompra">Finalizar Compra</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <img src="./img/portada2.jpg" alt="banner cotillon" class="banner2">
+
+          <h2 class="titulop" id="pdtodo">Todos los Productos</h2>
+
+          <section class="product-container">
+            <section class="categories">
+                <p class="box1">Categorias</p>
+                <ul class="filters">
+                  <li class="filter-Item">
+                    <a id="btntodo">Todo</a>
+                    </li>
+                  <li class="filter-Item">
+                  <a id="btnanteojos">Anteojos</a>
+                  </li>
+                  <li class="filter-Item">
+                    <a id="btncollares">Collares</a>
+                    </li>
+                  <li class="filter-Item">
+                    <a id="btncorbatas">Corbatas</a>
+                    </li>
+                  <li class="filter-Item">
+                    <a id="btnpulseras">Pulseras</a>
+                    </li>
+                  <li class="filter-Item">
+                    <a id="btnvinchas">Vinchas</a>
+                    </li>
+                  <li class="filter-Item">
+                    <a id="btnvarios">Varios</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="box2" id="product-container">
+
+              
+            </section>
+        </section>
+
+        </main>
+
+
+          <!-- FOOTER -->
+
+
+          <footer class="text-center text-lg-start footertop">
+            <div class="container d-flex justify-content-center py-5">
+              <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: rgb(173, 74, 248);">
+                <i class="fab fa-facebook-f"></i>
+              </button>
+              <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: rgb(173, 74, 248);">
+                <i class="fab fa-youtube"></i>
+              </button>
+              <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: rgb(173, 74, 248);">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </button>
+              <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: rgb(173, 74, 248);">
+                <i class="fab fa-twitter"></i>
+              </button>
+            </div>
+        
+            <div class="text-center text-white p-3 footerbot">
+              © 2023 Copyright:
+              <a class="text-white" href="#">www.cotishow.com.ar</a>
+            </div>
+          </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script src="./js/products.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/productSlider.js"></script>
+        <script src="./js/productContent.js"></script>
+        <script src="./js/cartRender.js"></script>
+        <script src="https://sdk.mercadopago.com/js/v2"></script>
+        <script src="./js/productUploader.js"></script>
+        <script src="https://kit.fontawesome.com/e3b3d41c44.js" crossorigin="anonymous"></script>
+    </body>
+</html>

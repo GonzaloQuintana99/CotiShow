@@ -1,0 +1,433 @@
+:root{
+    --main-color: rgb(195, 122, 251);
+    --background-main-color: rgb(235, 235, 235);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Viga', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+main {
+    background-color: var(--background-main-color);
+}
+
+header{
+    background-color: var(--main-color)
+}
+
+
+/* NAVBAR */
+
+
+.navbar{
+    font-size: 2.0rem;
+    color: white;
+}
+
+.nav-item{
+    margin: 1.0rem;
+}
+
+.logo{
+    width: 12.0rem;
+    height: 7.0rem;
+    background-color: var(--main-color);
+}
+
+.dropdown-menu a{   
+    color: black;
+    background-color: white;  
+    font-size: 1.5rem;
+}
+
+.dropdown-menu a:hover{   
+    color: white; 
+    background-color: var(--main-color)
+}
+
+.stock{
+    display:none
+}
+
+.buscador{
+    width: 20.0rem;
+    height: 4.2rem;
+    font-size: 1.5rem;
+    border-width: 5px;
+    border-color: var(--main-color);
+    outline: none;
+}
+
+.whatsappbtn{
+    font-size: 2.6rem;
+    width: 4.0rem;
+    height: 4.2rem;
+    background-color: var(--main-color);
+    margin-left: 1.0rem;
+    border: 0px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.whatsappbtn:hover{
+    color: lime;
+}
+
+input[type=checkbox]:checked {
+    background-color: var(--main-color) !important;
+  }
+
+.formulario{
+    width: 25.0rem;
+    height: 30.0rem;
+    font-size: 2.2rem;
+}
+
+.cart{
+    font-size: 2.5rem;
+    width: 4.0rem;
+    color: white;
+    height: 4.2rem;
+    background-color: var(--main-color);
+    margin-left: 1.rem;
+    border: 0px;
+}
+
+.cart:hover{
+    color: yellow;
+}
+
+#searchedResult{
+    position: absolute;
+    top: 8.7rem;
+    right: 1.5rem;
+    z-index: 2;
+}
+
+.productSearched{
+    font-size: 2.0rem;
+    background-color: white;
+    list-style-type: none;
+    border: 1px solid black;
+    z-index: 3;
+}
+
+.imagenSearch{
+    width: 20.0rem;
+}
+
+.titleSearch{
+    width: 20.0rem;
+    text-align: center;
+}
+
+.priceSearch{
+    width: 10.0rem;
+    text-align: center;
+}
+
+
+/* IMAGEN SEPARADORA COMBOS */
+
+
+.combos{
+    width: 100%;
+    height: 51.5rem;
+}
+
+
+/* SLIDER MAS VENDIDOS */
+
+
+.slider-container{
+    height: 55.0rem;
+}
+
+.swiper {
+    top: 6%;
+    width: 60%;
+    height: 47.0rem;
+  }
+
+.card{
+    width: 20.0rem;
+    margin: auto;
+    margin: 1.0rem;
+}
+
+img{
+    width: 100%;
+    height: 15.0rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+.card-body{
+    height: 12.0rem;
+    font-size: 2.0rem;
+    background-color: white;
+}
+
+.card-title{
+    text-align: center;
+    font-size: 2.0rem;
+    margin-bottom: 0.2rem;
+    background-color: white;
+}
+
+.card-information{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    grid-column: auto auto;
+    padding: 0.5rem;
+}
+
+.card-text-infop{
+    text-align: left;
+    font-size: 2.2rem;
+}
+
+.card-text-infos{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.special-price{
+    font-size: 1.1rem;
+}
+
+.card-text-infoid{
+    text-align: left;
+    font-size: 1.2rem;
+    color: rgb(148, 148, 144);
+}
+
+.card-text-infostock{
+    text-align: right;
+    font-size: 1.2rem;
+}
+
+.green{
+    color: green;
+    font-size: 1.3rem;
+}
+
+.red{
+    color: red;
+    font-size: 1.3rem;
+}
+
+.slider-container .swiper-button-prev{
+    z-index: 1;
+    --swiper-navigation-size: 1.5rem;
+    --swiper-theme-color: white;
+    border-radius: 0.5rem;
+    top: 82.0rem;
+    left: 35.0rem;
+    background-color: var(--main-color);
+    height: 4.5rem;
+    width: 2.5rem;
+}
+
+.slider-container .swiper-button-next{
+    z-index: 1;
+    --swiper-navigation-size: 1.5rem;
+    --swiper-theme-color: white;
+    border-radius: 0.5rem;
+    top: 82.0rem;
+    right: 35.0rem;
+    background-color: var(--main-color);
+    height: 4.5rem;
+    width: 2.5rem;
+}
+
+.card:hover {
+    box-shadow: 0px -5px 10px 0px rgba(61, 61, 61, 0.5)
+}
+
+.btnaddcart{
+    text-align: center;
+    height: 3.5rem;
+    width: 80%;
+    background-color: white;
+    font-size: 1.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3.5rem;
+    border-radius: 1.5rem;
+    border: 0.3rem solid var(--main-color);
+}
+
+.btnaddcart:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+
+
+/* Carrito */
+
+
+.modal-header{
+    font-size: 2.5rem;
+}
+
+.imagenCart{
+    width: 30.0rem;
+    height: 2.5rem;
+    font-size: 2.0rem;
+    text-align: center;
+    vertical-align: middle;
+    margin: 10.0rem;
+}
+
+.titleCart{
+    text-align: center;
+    vertical-align: middle;
+    width: 25.0rem;
+    height: 10.0rem;
+    font-size: 2.0rem;
+    
+}
+
+.quantityCart{
+    text-align: center;
+    vertical-align: middle;
+    width: 25.0rem;
+    height: 10.0rem;
+    font-size: 2.0rem;
+}
+
+.priceCart{
+    text-align: center;
+    vertical-align: middle;
+    width: 25.0rem;
+    height: 10.0rem;
+    font-size: 2.0rem;
+}
+
+.delete{
+    text-align: center;
+    vertical-align: middle;
+    width: 10.0rem;
+    height: 15.0rem;
+    font-size: 2.5rem;
+    color: Red;
+    border: 0px;
+    background-color: white;
+}
+
+.btncompra{
+    text-align: center;
+    height: 3.5rem;
+    width: 20.0rem;
+    font-size: 2.0rem;
+    background-color: var(--main-color);
+}
+
+.btnlimpiar{
+    text-align: center;
+    height: 3.5rem;
+    width: 20.0rem;
+    font-size: 2.0rem;
+    background-color: red;
+}
+
+.totalCart{
+    text-align: Center;
+    font-size: 2.0rem;
+}
+
+
+/* PRODUCTOS */
+
+.banner2{
+    width: 65%;
+    height: 40.0rem;
+}
+
+.titulop{
+    font-size: 5.0rem;
+    text-align: center;
+    margin-top: 10.0rem;
+    margin-bottom: 3.0rem;
+}
+
+.product-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.box1{
+    width: 16vw;
+    font-size: 3.0rem;
+}
+
+.categories{
+    background-color: white;
+    margin-left: 10.0rem;
+    text-align: center;
+    height: 50.0rem;
+    width: 16%;
+}
+
+.categories:hover{
+    box-shadow: 0px -5px 10px 0px rgba(61, 61, 61, 0.5)
+}
+
+.box2{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/* FILTROS */
+
+
+.filter-Item{
+    font-size: 2.0rem;
+    cursor: pointer;
+    margin-right: 3.6rem;
+}
+
+.filter-Item:hover{
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.filter-Item:active{
+    color: white;
+    background-color: var(--main-color);
+    text-decoration: underline;
+}
+
+.filters{
+    list-style-type: none;
+}
+
+
+/* FOOTER */
+
+
+.footertop{
+    background-color: rgb(202, 143, 248);
+}
+
+.footerbot{
+    background-color: var(--main-color);
+    font-size: 2.0rem;
+}
